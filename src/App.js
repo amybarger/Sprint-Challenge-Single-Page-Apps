@@ -1,17 +1,27 @@
 import React from "react";
 import Header from "./components/Header.js";
 import CharacterList from "./components/CharacterList"
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
+import WelcomePage from "./components/WelcomePage"
 
 export default function App() {
   return (
     <main data-testid='app'>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/CharacterList">Characters</Link>
-      </nav>
-      <Route exact path="/" component={App} />
-      <Route path="/CharacterList" component={CharacterList} />
+      <Header />
+        <nav>
+          <Link to="/">Home</Link>
+          <br></br>
+          <br></br>
+          <br></br>
+          <Link to="/CharacterList">Characters</Link>
+          <br></br>
+          <br></br>
+          <br></br>
+        </nav>
+
+        <Route exact path="/" component={WelcomePage} />
+        <Route path="/CharacterList" component={CharacterList} />
+
       <Header />
       <CharacterList />
     </main>
