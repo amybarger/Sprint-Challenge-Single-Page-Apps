@@ -31,3 +31,8 @@ main {
 header h1 {
   text-align: center;
 }
+
+.card {
+margin-left: 20%;
+text-align: center;
+}

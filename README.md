@@ -29,6 +29,9 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 > Answer:
 
+- less data is processed, so it helps pages load faster
+- smoother transitions with animations, images, etc.
+
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
